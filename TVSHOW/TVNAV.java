@@ -1,6 +1,5 @@
-package movies;
-
-public class THENAV 
+package TVSHOW;
+public class TVNAV 
 {
 public void display()
 {

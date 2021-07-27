@@ -1,30 +1,28 @@
+package MAIn;
 import java.util.*;
 import movies.*;
 import javax.swing.*;
-class MAIn 
+public class MAIn 
 {
 char choice;
 Scanner sc = new Scanner(System.in);
-
-void intromessage()
+public void intromessage()
 {
 System.out.println("-//////-///-/MOVIE PICKER-/-////-////////-///");
 System.out.println("Movie picker was made\n");
-System.out.println("So that you wont have to stare at a screen with 100000+ content\n");
-System.out.println("But chose which genre and have the Top 10 movies with links to them");
+System.out.println("So that you dont have to stare at a screen with 100000+ content\n");
+System.out.println("But choose which genre and have the Top 3 movies with links to them");
 System.out.println("Lets dive in");
 }
-
-void detailsGrab()
+public void detailsGrab()
 {
 System.out.println("Lets start with Your name ");
-String NAME = sc.nextLine();  
-System.out.println("Hows the Weekend "+NAME+"?");
+String NAME = sc.nextLine(); 
 }
-
-void choice()throws Exception
+public void choice()throws Exception
 {
 THENAV N = new THENAV();
+THENAV TV = new THENAV();
 Genre G = new Genre();
 System.out.println("MOVIES OR TV?");
 Scanner SS = new Scanner(System.in);
@@ -39,7 +37,7 @@ G.choice();
 break;
 case "tv":
 case "TV":
-System.out.println("PODA TV");
+TV.display();
 break;
 default: System.out.println("Illegal  choice "+choice);
 throw new Exception("What alienated script is that");

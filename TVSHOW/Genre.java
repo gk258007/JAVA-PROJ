@@ -1,6 +1,6 @@
-package movies;
+package TVSHOW;
 import java.util.*;
-public class Genre extends Romantic
+public class Genre extends Romance
 {
 char genre;
 Scanner GG = new Scanner(System.in);
@@ -18,28 +18,30 @@ switch(genre)
 case "comedy":
 case "Comedy":
 Comedy C = new Comedy();
-C.main(null);
+C.listtvshows();
 System.out.println("COMEDY IT IS");
 break;
 case "Romance":
 case "romance":
-Romantic R = new Romantic();
-R.main(null);
+Romance R = new Romance();
+R.listtvshows();
+//System.out.println("Romance it is");
 break;
 case "Horror":
 case "horror":
-horror h = new horror();
-h.main(null);
+horror h =new horror();
+h.listtvshows();
 break;
 case "thriller":
 case "Thriller":
 thriller T = new thriller();
-T.main(null);
+T.listtvshows();
+System.out.println("Thriller");
 break;
 case "action":
 case "Action":
 action a = new action();
-a.main(null);
+a.listtvshows();
 default: System.out.println("Illegal  choice "+genre);
 throw new Exception("What alienated script is that");
 }

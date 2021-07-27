@@ -1,0 +1,6 @@
+Title:Castle rock 
+ whereToWatch:https://www.netflix.com/in/title/81036944%22
+Title:Marianne
+ whereToWatch :https://www.netflix.com/in/title/80217779:%22
+Title:Typewriter
+ whereToWatch :https://www.netflix.com/in/title/80996338:%22
